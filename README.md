@@ -1,12 +1,9 @@
-## Micronaut 2.4.0 Documentation
+## Bug: ShutdownEvent triggered twice
 
-- [User Guide](https://docs.micronaut.io/2.4.0/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.4.0/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.4.0/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+```
+./gradlew build
+java -jar build/libs/shutdown-jetty-twice-0.1-all.jar
+Ctrl-C
+```
 
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+will output "Shutdown" twice.
